@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "product": {
+    "name": "Chinese Ludo",
+    "summary": "Chinese Ludo"
+  },
+  "frontend": {
+    "framework": "React and Vite",
+    "pages": [
+      "Dashboard",
+      "Clients",
+      "Users"
+    ],
+    "apiOperations": [
+      "listClients",
+      "createClient",
+      "listUsers",
+      "createUser"
+    ]
+  },
+  "application": {
+    "backendRequired": false
+  },
+  "backend": {
+    "runtime": "Node.js and Express",
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/api/clients"
+      },
+      {
+        "method": "POST",
+        "path": "/api/clients"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users"
+      }
+    ],
+    "resources": [
+      {
+        "singular": "client",
+        "plural": "clients"
+      },
+      {
+        "singular": "user",
+        "plural": "users"
+      }
+    ]
+  },
+  "database": {
+    "engine": "PostgreSQL",
+    "resources": [
+      "clients",
+      "users"
+    ]
+  },
+  "environments": [
+    "Development",
+    "Test"
+  ],
+  "source": {
+    "discussion": "Scientific calculator with advanced features, No database required for now and no backend support needed",
+    "plan": "Develop a client-side web-based scientific calculator application with advanced mathematical functions, focusing on a responsive user interface and robust calculation logic, with no database or backend dependencies.",
+    "sketchName": null
+  }
+}
